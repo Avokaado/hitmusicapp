@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        { /*<Header />*/ }
+        <Header />
         <div className="App container">
           <ListGenres />
           <ListTracks tracks = {this.state.dataList} />

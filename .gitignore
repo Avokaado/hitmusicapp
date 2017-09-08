@@ -9,6 +9,9 @@
 # production
 /build
 
+# JSON-data
+/src/data.js
+
 # misc
 .DS_Store
 .env.local

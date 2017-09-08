@@ -13,6 +13,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
+  "homepage" : "http://pohjolainen.fi/musicapp",
   "devDependencies": {
     "bootstrap-css-only": "^3.3.7"
   }

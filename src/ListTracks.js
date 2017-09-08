@@ -51,6 +51,12 @@ export class ListTracks extends React.Component {
 						{ this.tracklist('trip hop') }
 					</ul>
 				</div>
+				<div className="tracklist tracklist-trance">
+					<ul>
+						<h3>Trance</h3>
+						{ this.tracklist('trance') }
+					</ul>
+				</div>
 			</div>
 		);
 	}
