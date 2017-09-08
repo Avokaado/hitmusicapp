@@ -6,7 +6,7 @@ export class ListAlbums extends React.Component {
 		 let albumVariable = this.props.tracks.map((elem, i) => {
 		 	if (elem.genre === modifier && elem.album) {
 				return (
-					<li key={ i }>{ elem.artist } - { elem.album } ({ elem.year })</li>
+					<li key={ i }><a target="_blank" href={elem.url}>{ elem.artist } - { elem.album } ({ elem.year })</a></li>
 				)
 			}
 		});
@@ -19,7 +19,7 @@ export class ListAlbums extends React.Component {
 				<div className="albumlist albumlist-pop">
 					<ul>
 						<h3>Pop</h3>
-						{ this.albumlist('pop') }
+						{ this.albumlist('Pop') }
 					</ul>
 				</div>
 				<div className="albumlist albumlist-hiphop">
@@ -31,25 +31,31 @@ export class ListAlbums extends React.Component {
 				<div className="albumlist albumlist-rock">
 					<ul>
 						<h3>Rock</h3>
-						{ this.albumlist('rock') }
+						{ this.albumlist('Rock') }
 					</ul>
 				</div>
 				<div className="albumlist albumlist-punk">
 					<ul>
 						<h3>Punk</h3>
-						{ this.albumlist('punk') }
+						{ this.albumlist('Punk') }
 					</ul>
 				</div>
 				<div className="albumlist albumlist-electronic">
 					<ul>
 						<h3>Electronic</h3>
-						{ this.albumlist('electronic') }
+						{ this.albumlist('Electronic') }
 					</ul>
 				</div>
 				<div className="albumlist albumlist-triphop">
 					<ul>
 						<h3>Trip hop</h3>
-						{ this.albumlist('trip hop') }
+						{ this.albumlist('Trip hop') }
+					</ul>
+				</div>
+				<div className="albumlist albumlist-metal">
+					<ul>
+						<h3>Metal</h3>
+						{ this.albumlist('Metal') }
 					</ul>
 				</div>
 			</div>

@@ -15,7 +15,7 @@ class App extends Component {
       <div>
         <Header />
         <div className="App container">
-          <ListGenres />
+          <ListGenres tracks = {this.state.dataList}/>
           <ListTracks tracks = {this.state.dataList} />
           <ListAlbums tracks = {this.state.dataList} />
         </div>
