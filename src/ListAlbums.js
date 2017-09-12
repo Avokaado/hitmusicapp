@@ -58,6 +58,18 @@ export class ListAlbums extends React.Component {
 						{ this.albumlist('Metal') }
 					</ul>
 				</div>
+				<div className="albumlist albumlist-reggae">
+					<ul>
+						<h3>Reggae</h3>
+						{ this.albumlist('Reggae') }
+					</ul>
+				</div>
+				<div className="albumlist albumlist-alternative">
+					<ul>
+						<h3>Alternative</h3>
+						{ this.albumlist('Alternative') }
+					</ul>
+				</div>
 			</div>
 		);
 	}

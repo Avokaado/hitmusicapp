@@ -74,6 +74,18 @@ export class ListTracks extends React.Component {
 						{ this.tracklist('Metal') }
 					</ul>
 				</div>
+				<div className="albumlist albumlist-reggae">
+					<ul>
+						<h3>Reggae</h3>
+						{ this.tracklist('Reggae') }
+					</ul>
+				</div>
+				<div className="albumlist albumlist-alternative">
+					<ul>
+						<h3>Alternative</h3>
+						{ this.tracklist('Alternative') }
+					</ul>
+				</div>
 			</div>
 		);
 	}
