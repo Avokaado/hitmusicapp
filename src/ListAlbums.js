@@ -2,7 +2,7 @@ import React from 'react';
 import './ListAlbums.css';
 
 export class ListAlbums extends React.Component {
-	albumlist(modifier) {
+	/*albumlist(modifier) {
 		 let albumVariable = this.props.tracks.map((elem, i) => {
 		 	if (elem.genre === modifier && elem.album) {
 				return (
@@ -11,7 +11,7 @@ export class ListAlbums extends React.Component {
 			}
 		});
 		return albumVariable;
-	}
+	}*/
 	render() {
 		return (
 			<div>

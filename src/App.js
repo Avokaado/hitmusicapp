@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Header } from './Header';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import HeaderBar from './HeaderBar';
 import { ListGenres } from './ListGenres';
 import { ListTracks } from './ListTracks';
 import { ListAlbums } from './ListAlbums';
@@ -13,11 +14,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <div className="App container">
+        <div className="App">
+          <MuiThemeProvider>
+            <HeaderBar />
+          </MuiThemeProvider>
           <ListGenres tracks = {this.state.dataList}/>
-          <ListTracks tracks = {this.state.dataList} />
-          <ListAlbums tracks = {this.state.dataList} />
+          {/*<ListAlbums tracks = {this.state.dataList} />*/}
         </div>
       </div>
     );

@@ -1,5 +1,5 @@
 body {
-  font-family:'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 header {
   text-align: center;
@@ -11,6 +11,10 @@ header h2 {
   color:white;
   margin:0;
   padding: 0;
+}
+
+ul {
+  padding:0;
 }
 .App {
   text-align: center;
